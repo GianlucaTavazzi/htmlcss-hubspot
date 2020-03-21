@@ -16,6 +16,12 @@
     clear: both;
 }
 
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
 .header-top{
     width: 100%;
     background-color: #f5f8fa;
@@ -99,7 +105,6 @@
 #primomain{
     width:100%;
     background-image: linear-gradient(to top right, #fef8f0, #fff3ee, #fff1ee);
-    border-bottom: 1px solid;
 }
 
 .grow{
@@ -138,19 +143,11 @@
 
 #secondomain{
     width:100%;
-    height:1000px;
     background-color: #f5f8fa;
-    border-bottom: 1px solid;
-}
-
-.primoblocco{
-    background-color: yellow;
-    height:500px;
 }
 
 .hbox{
-    height:500px;
-    width: 35%;
+    width: 32%;
     float: left;
     padding-top: 70px;
 }
@@ -162,23 +159,152 @@ h2{
 }
 
 .hbox p{
-    font-size: 20px;
+    font-size: 18px;
     line-height: 25px;
     padding-top: 20px;
 }
 
 .box{
-    background-color: green;
-    height:500px;
-    width: 65%;
+    background-color: white;
+    width: 66%;
+    margin-left:2%;
+    margin-top: 73px;
+    border-radius: 4px;
     float: left;
 }
 
 .logo{
-    display: inline-block;
+    padding: 34px 40px;
 }
 
-.secondoblocco{
-    background-color: blue;
-    height:500px;
+.logo img, .logo h3{
+    display: inline-block;
+    margin-right:10px;
+    font-size:20px
+}
+
+.box p{
+    font-size: 15px;
+    padding: 0px 40px;
+}
+
+.features{
+    margin: 40px;
+    font-size: 13px;
+}
+
+.list ul{
+    display: inline-block;
+    padding-top: 30px;
+}
+
+.list ul li{
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.list .tasto{
+    margin-left: 65px;
+}
+
+#get{
+    padding: 15px 93px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.fa-check-circle{
+    color: #ff7a59;
+}
+
+.sbox{
+    width:32%;
+    margin-left: 2%;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    border-radius: 4px;
+    background-color: white;
+    float: left;
+}
+
+.sbox:first-child{
+    margin-left: 0px;
+}
+
+.sbox:nth-child(2) .logo{
+    padding-bottom: 30px;
+}
+
+.sbox p{
+    font-size: 15px;
+    padding: 0px 40px;
+}
+
+.slist{
+    margin-bottom: 60px;
+}
+
+.slist ul{
+    padding-top: 30px;
+    list-style-type: none;
+}
+
+.slist ul li{
+    padding-bottom: 15px;
+}
+
+.slist ul li:last-child{
+    padding-bottom: 60px;
+}
+
+#terzomain{
+    width:100%;
+    background-image: linear-gradient(45deg, #00a4bd, #00bda5);
+}
+
+.titolodati{
+    padding: 100px 110px;
+}
+
+.titolodati h2{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.titolodati p{
+    font-size: 22px;
+    text-align: center;
+}
+
+.bloccouno{
+    width: 25%;
+    padding: 20px 20px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 20px;
+    float: left;
+    color: white;
+    border-right: 1px solid white;
+}
+
+.bloccouno h1{
+    font-size: 50px;
+    margin:10px 0px;
+}
+
+.primafila{
+    border-bottom: 1px solid white;
+}
+
+#br{
+    border-right:none
+}
+
+.riparo img{
+    padding-bottom: 10px;
+}
+
+.secondafila{
+    margin-bottom:100px;
 }
